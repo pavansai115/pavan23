@@ -1,2 +1,2 @@
-hai i am pavan 
-cse stiudent
+hai i am pavan
+i am student
