@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>erf</title>
+<style>
+body{font-family:Arial;background:#f2f2f2;}
+form{width:350px;margin:auto;padding:20px;border-radius:8px;border:2px solid black;}
+h2{text-align:center;}
+#msg{color:green;}
+button{background:blue;color:white;padding:8px;}
+</style>
+</head>
+<body>
+<form id="regform" onsubmit="register(event)">
+name:<input type="text"required><br>
+email:<input type="email"required><br>
+phone:<input type="text" pattern="[0-9]{10}"required><br>
+gender:<input type="radio" name="gender">male
+gender:<input type="radio" name="gender">female<br>
+address:<textarea></textarea><br>
+<p id="msg" hidden>
+tq</p>
+<button type="submit">register</button>
+<button type="reset">reset</button>
+</form>
+<script>
+function register(event){
+document.getElementById("regform").reset();
+document.getElementById("msg").hidden=false;}
+</script>
+</body>
+</html>
